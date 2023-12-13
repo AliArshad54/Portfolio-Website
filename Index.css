@@ -1,0 +1,424 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+}
+body{
+    background-color: rgba(0, 0, 10, 1);
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px 30px;
+    width: 100%;
+    height: 125px;
+    /* position: fixed;
+    top: -10px;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 1); */
+}
+
+nav h2{
+    color: #fff;
+}
+nav span{
+    color: aqua;
+}
+nav .nav-links {
+display: flex;
+}
+nav .nav-links li{
+    list-style-type: none;
+    margin: 25px  25px;
+}
+nav .nav-links li a{
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;    
+    color: aqua;
+}
+
+nav .nav-links li a::before{
+    content: '';
+    position: absolute;
+    top: 80px;
+    height: 5px;
+    width: 0;
+    background-color: #fff;
+    transition: all 0.2s ease-in-out;
+    }
+    nav .nav-links li a:hover::before{
+        width: 75px;
+    }
+nav .nav-links button{
+    padding: 10px;
+    margin-left: 125px;
+    border-radius: 55px;
+    background-color: rgba(0, 0, 10, 1);
+    font-size: 20px;
+    border: 3px solid aqua  ;
+    box-shadow:  -10px 5px 50px 0px aqua;
+}
+nav .nav-links button a{
+    text-decoration: none;
+    color: aqua;
+}
+header{
+    margin-top: 120px;
+    height: 825px;
+    width: 60%;
+    margin-left: 125px;
+}
+header span{
+    height: 35px;
+    width: 90px;
+    position: relative;
+    left: 125px;
+    box-shadow: 30px 40px 120px 30px aqua,
+    30px 40px 120px 40px aqua;
+}
+header img{
+    height: 225px;
+    width: 255px;
+    border:none;
+    position: relative;
+    box-shadow:  -0px 25px 50px 0px aqua;
+    top: 24px;  
+    left: 950px;
+    animation: downUp 4s ease-in-out infinite;
+}
+@keyframes downUp{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.4rem);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+
+header h2{
+    width: 225px;
+    color: #fff;
+    margin: -60px 125px 20px 140px;
+    font-size: 40px;
+    font-weight: 900;
+
+}
+header p{
+color: #fff;
+font-size: 40px; 
+margin-left: 65px;
+}
+section{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+section .cont{
+    height: 130vh;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+section .cont .Dtl{
+    width: 750px;
+    height: 78vh;
+    margin-top:40px;
+    overflow: hidden;
+}
+section .cont .Dtl h2{
+    text-align: center;
+    padding: 2rem;
+    font-size: 45px;
+    font-weight: 800;
+    font-style: oblique;
+    color: #fff;
+    border-bottom: 2px solid aqua;
+}
+section .cont .Dtl p{
+    color: #fff;
+    font-size: 25px;
+margin-left: 25px;
+
+}
+section .cont .profile{
+    border: 2px solid aqua;
+    width: 325px;
+    margin-top: 140px;
+    height: 80vh;
+}
+section .cont .profile img{
+    height: 125px;
+    width: 135px;
+    border:none ;
+    border-radius:59px;
+    margin: 25px 0 auto 95px;
+    
+}
+section .cont .profile h2{
+    text-align: center;
+    padding: 1rem;
+    font-size: 25px;
+    font-weight: 800;
+    font-style: oblique;
+    color: #fff;
+}
+section .cont .profile p{
+color: #fff;
+font-size: 15px;
+margin-left: 65px;
+
+}
+section .cont .profile h3{
+    font-size: 30px;
+    color: #fff;
+    margin-top:45px;
+    margin-left: 85px;
+
+}
+section .cont .profile .social{
+    height: 50px;
+    margin-top:55px;
+    border: none;
+    font-size: 35px;
+margin-left: 105px;
+}
+section .cont .profile .social i{
+    color: #fff;
+cursor: pointer;
+}
+section .heading{
+    height: 50px;
+    width: 290px;
+    margin-left: 623px;
+    margin-bottom: 40px;
+}
+section .heading h2{
+    color: #fff;
+    font-weight: 808;
+    font-size: 40px;
+}
+section .container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 820px;
+    margin-left: 130px;
+}
+
+section .container .detail{
+    height: 295px;
+    width: 340px;
+    border: 2px solid rgba(30, 20, 10, 0.4);
+    font-weight: bold;
+    font-variant: normal;
+    position: relative;
+    top: 15px;
+    transition: all 0.2s ease-in-out;
+    background-color: rgba(30, 20, 10, 0.4);
+z-index: 900;
+box-sizing: border-box;
+box-shadow: -50px 20px 80px 10px aqua;
+
+}
+section .detail:hover{
+transform: rotate(3deg) scale(1.1);
+}
+section .container .detail:nth-child(even){
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+section .container .detail:nth-child(odd){
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+section .container .detail:nth-child(even){
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+section .container .detail:nth-child(odd){
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+section .detail h1{
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    padding: 25px;
+}
+section .detail p{
+    text-align: center;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+}
+.contact {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.contact form {
+    text-align: left;
+}
+.contact form label,
+.contact form textarea {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+   
+}
+
+.contact form input,
+.contact form textarea {
+color: aqua ;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px; background-color: rgba(0, 0, 0, 0.3);
+}
+.contact form input,
+.contact form textarea:visited{
+background-color: rgba(0, 0, 0, 0.3);
+}
+.contact form button {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 4px solid aqua;
+}
+
+.contact form button:hover {
+    background-color: #0056b3;
+}
+/* Your existing CSS code... */
+
+/* Add this media query for smaller screens */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+    nav .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav .nav-links li {
+        margin: 10px 0;
+    }
+    nav .nav-links button {
+        margin: 10px 0;
+        margin-left: 0;
+    }
+    header {
+        margin-top: 80px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    header img {
+    height: 50px;
+    width: 60px;
+        left: 230px;
+        bottom: 40px;
+        animation: none;
+    }
+    header h2 {
+        font-size: 30px;
+        margin: -40px 0 10px 0;
+    }
+    header p {
+        font-size: 30px;
+        margin-left: 0;
+
+    }
+    section .cont {
+        flex-direction: column;
+    }
+    section .cont .Dtl,
+    section .cont .profile {
+        width: 100%;
+        margin-left: 0;
+    }
+    section .cont .profile {
+    display: none;
+        margin-top: 40px;
+    }
+    section .cont .profile img {
+        margin-left:140px;
+    }
+    section .container {
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    section .heading{
+       margin-left:210px ;
+    }
+    section .container .detail {
+        width: 290px;
+        margin: 10px auto;
+        box-shadow: inset 40px 50px 160px aqua;
+    }
+    section .detail h1 {
+        font-size: 20px;
+    }
+    section .detail p {
+        font-size: 16px;
+    }
+}
+
+
+/* Your existing CSS code... */
+
+
+/* Adjust label font size for smaller screens */
+@media screen and (max-width: 768px) {
+    .contact-container {
+    position: relative;
+    top: 635px;
+    max-width: 90%;
+    padding: 0 15px;
+    }
+    .contact h2 {
+        font-size: 30px;
+    }
+    .contact form label,
+    .contact form textarea,
+    .contact form input {
+        width: 100%;
+    }
+    .contact form button {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
